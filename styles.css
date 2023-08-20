@@ -3,9 +3,55 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
-body {
-    margin: 0px
+:root {
+    --sidebar-width: 27vw;
 }
 
+body {
+    margin: 0px;
+    display: flex;
+    gap: 30px;
+    background-color: #f9fafb;
+}
 
+.sidebar-section,
+.background-image {
+    width: var(--sidebar-width);
+    height: 100vh;
+}
 
+.fixed {
+    position: fixed;
+}
+
+.logo-section,
+.credit-section {
+    box-sizing: border-box;
+    background-color: #00000070;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--sidebar-width);
+    padding: 10px;
+}
+
+.logo-section {
+    top: 20vh;
+    font-family: norse-bold, sans-serif;
+    font-size: 5rem;
+}
+
+.logo-image {
+    height: 110px;
+}
+
+.credit-section {
+    bottom: 0vh;
+    height: 50px;
+}
+
+.create-account-button {
+    background-color: #596D48;
+    color: white;
+}
