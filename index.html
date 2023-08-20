@@ -12,69 +12,93 @@
 
     <div class="sidebar-section">
         <img src="./images/background-image.jpg" class="background-image" alt="Nice Background Image">
-        
+
         <div class="fixed logo-section">
             <img src="./images/odin-logo.png" class="logo-image" alt="Odin Logo">
             ODIN
 
         </div>
-    
+
         <div class="fixed credit-section">
-            Photo by Hailie West on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+            Photo by Hailie West on &nbsp;
+            <a href="https://unsplash.com/photos/25xggax4bSA" target="_new"> Unsplash</a>
         </div>
     </div>
+
     <div class="main-section">
+
         <div class="content-header">
-            <div class="content-header-section-1">
-                <h2>
-                    This is not a real online service! You know you need something like this in your life to help you
-                    realize your deepest dreams.
-                </h2>
-                <h2>
-                    Sign up <em>now</em> to get started
-                </h2>
-                <h2>
-                    You <em>know</em> you want to
-                </h2>
+
+            <div class="content-header-font">
+                This is not a real online service! You know you need something
             </div>
+            <div class="content-header-font">
+                like this in your life to help you realize your deepest dreams.
+            </div>
+            <div class="content-header-font">
+                Sign up <em>now</em> to get started
+            </div>
+            <div class="content-header-font">
+                You <em>know</em> you want to.
+            </div>
+
         </div>
+
         <div class="content-form">
 
             <form action="" method="post">
 
-                <div>
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name" id="first_name" required>
+                <fieldset>
+                    <h2>Let's do this!</h2>
 
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" name="last_name" id="last_name" required>
+                    <div class="form-row">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required placeholder="Thor">
+                        </div>
 
-                </div>
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required placeholder="Odinson">
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <div class="form-row">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required placeholder="thor@asgard.com">
+                        </div>
 
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" name="phone_number" id="phone_number">
-                </div>
-
-
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" required>
-
-                    <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm_password" id="confirm_password" required>
-                </div>
-
+                        <div>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" name="phone_number" id="phone_number" placeholder="1234567899">
+                        </div>
+                    </div>
 
 
-                <button type="button" class="create-account-button">Create Account</button>
+                    <div class="form-row">
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required
+                                title="Please enter a valid password. UpperCase, LowerCase, Number/SpecialChar and min 8 Chars"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        </div>
+
+                        <div>
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+                <button type="submit" class="create-account-button">Create Account</button>
             </form>
         </div>
 
-        <div>
+        <div class="login-section">
             Already have an account? <a href="">Log in</a>
         </div>
 

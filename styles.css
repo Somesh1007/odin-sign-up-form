@@ -5,13 +5,19 @@
 
 :root {
     --sidebar-width: 27vw;
+    --main-padding: 0px 50px;
+    --main-width: calc(100vw - var(--sidebar-width))
 }
 
 body {
     margin: 0px;
     display: flex;
-    gap: 30px;
     background-color: #f9fafb;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+    text-decoration: none;
 }
 
 .sidebar-section,
@@ -51,7 +57,103 @@ body {
     height: 50px;
 }
 
+.credit-section>a {
+    color: white;
+}
+
+.main-section {
+    align-self: center;
+    background-color: #f9fafb;
+    width: var(--main-width);
+}
+
+.content-header,
+.form-row,
+.login-section {
+    padding: var(--main-padding);
+
+}
+
+.content-header-font {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.content-header>.content-header-font:last-child {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+fieldset {
+    border: 0px;
+    background-color: white;
+    box-shadow: 0 8px 3px -1px rgba(0, 0, 0, 0.1);
+}
+
+fieldset>h2 {
+    padding: var(--main-padding);
+}
+
+fieldset>* {
+    display: flex;
+    gap: 100px;
+}
+
+fieldset>*>* {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+fieldset input {
+    height: 30px;
+    width: 320px;
+    border-radius: 5px;
+    border: 2px solid #e4e4e6;
+    font-size: 1rem;
+}
+
+fieldset input:focus,
+fieldset input:focus-visible,
+fieldset input:focus:active {
+    border: 2px solid blue;
+}
+
+fieldset input:invalid {
+    border: 2px solid red;
+}
+
+fieldset input:valid {
+    border: 2px solid green;
+}
+
 .create-account-button {
+    margin: var(--main-padding);
+    margin-top: 30px;
     background-color: #596D48;
     color: white;
+    padding: 12px 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: #596D48;
+    border: 0px;
+}
+
+.login-section {
+    margin-top: 35px;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.login-section>a {
+    color: #596D48;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
